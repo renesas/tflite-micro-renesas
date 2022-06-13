@@ -1,8 +1,6 @@
-# Porting of Tensorflow lite for microcontrollers on Renesas evaluation kit.
+# Hello world example on EK-RA6M4
 
-The following repository provides the code used to port [Tensorflow Lite for Microcontrollers](https://www.tensorflow.org/lite/microcontrollers) on to Renesas RA family board, specifically the [EK-RA6M4](https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ek-ra6m4-evaluation-kit-ra6m4-mcu-group) board. 
-
-The code executes the [Hello World project](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/hello_world) and outputs the results through UART onto a terminal emulator using TFLM reference kernels. 
+The following project executes the [Hello World project](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/hello_world) and outputs the results through UART onto a terminal emulator using TFLM reference kernels. The hello world project is TinyML starter project that mimics a sine wave using a simple AI model, used as an introductory example to a TinyML workflow and ensuring your toolchain is set up properly.
 
 ## Project Set up
 
