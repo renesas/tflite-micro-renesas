@@ -1,0 +1,11 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+arg1 = $(1)
+export PATH=C:\Users\a5131463\AppData\Local\Programs\Renesas\toolchains\gcc_arm\9_2020q2\bin\;C:\Users\a5131463\.eclipse\com.renesas.platform_18846392\Utilities;C:/Users/a5131463/AppData/Local/Programs/Renesas/eclipse//plugins/com.renesas.runtime.jdk.hotspot.win32.x86_64_11.0.8.202009102051/jdk-11.0.8+10/bin/client;C:/Users/a5131463/AppData/Local/Programs/Renesas/eclipse//plugins/com.renesas.runtime.jdk.hotspot.win32.x86_64_11.0.8.202009102051/jdk-11.0.8+10/bin;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows;C:\Program Files\PowerShell\7\;C:\ProgramData\chocolatey\bin;C:\Users\a5131463\AppData\Local\Microsoft\WindowsApps;C:\Users\a5131463\AppData\Local\Programs\Git\cmd;C:\Users\a5131463\AppData\Local\Programs\Renesas\eclipse
+export TCINSTALL=C:\Users\a5131463\AppData\Local\Programs\Renesas\toolchains\gcc_arm\9_2020q2$(call arg1,\)
+export CWD=$(CURDIR)
+export TC_VERSION=9.3.1.20200408
+export PWD=$(CURDIR)
+export GCC_VERSION=9.3.1
