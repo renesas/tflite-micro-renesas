@@ -12,5 +12,5 @@ The examples provided in this repository is shown in table below.
 
 | Board  | Examples available |
 | ------------- | ------------- |
-| [EK-RA6M4](https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ek-ra6m4-evaluation-kit-ra6m4-mcu-group)   | Hello_world  |
+| [EK-RA6M4](https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ek-ra6m4-evaluation-kit-ra6m4-mcu-group)   | Hello World  |
 
