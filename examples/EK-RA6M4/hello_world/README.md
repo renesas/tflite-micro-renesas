@@ -1,6 +1,8 @@
 # Hello world example on EK-RA6M4
 
-The following project executes the [Hello World project](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/hello_world) and outputs the results through UART onto a terminal emulator using TFLM reference kernels. The hello world project is TinyML starter project that mimics a sine wave using a simple AI model, used as an introductory example to a TinyML workflow and ensuring your toolchain is set up properly.
+The following project executes the [Hello World project](https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/hello_world) and outputs the results through UART onto a terminal emulator using TFLM reference kernels.
+
+The hello world project is TinyML starter project that mimics a sine wave using a simple AI model, used as an introductory example to a TinyML workflow and ensuring your toolchain is set up properly.
 
 ## Project Set up
 
