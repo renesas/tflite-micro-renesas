@@ -119,32 +119,32 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 SECONDARY_FLASH += \
-Hello_World_TFLM_EKRA6M4_3.srec \
+Hello_World_TFLM_VOICE_RA6E1.srec \
 
 SECONDARY_SIZE += \
-Hello_World_TFLM_EKRA6M4_3.siz \
+Hello_World_TFLM_VOICE_RA6E1.siz \
 
 
 # All Target
-all: Hello_World_TFLM_EKRA6M4_3.elf secondary-outputs
+all: Hello_World_TFLM_VOICE_RA6E1.elf secondary-outputs
 
 # Tool invocations
-Hello_World_TFLM_EKRA6M4_3.elf: $(OBJS) $(USER_OBJS) $(LINKER_SCRIPT)
-	$(file > Hello_World_TFLM_EKRA6M4_3.elf.in,-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -O2 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fpermissive -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g -T "fsp.ld" -Xlinker --gc-sections -L "C:\\Users\\devteam\\e2_studio\\workspace\\Hello_World_TFLM_EKRA6M4_3/script" -Wl,-Map,"Hello_World_TFLM_EKRA6M4_3.map" --specs=nano.specs --specs=rdimon.specs -o "Hello_World_TFLM_EKRA6M4_3.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group)
-	@echo Building target: $@ && arm-none-eabi-g++ @"Hello_World_TFLM_EKRA6M4_3.elf.in"
+Hello_World_TFLM_VOICE_RA6E1.elf: $(OBJS) $(USER_OBJS) $(LINKER_SCRIPT)
+	$(file > Hello_World_TFLM_VOICE_RA6E1.elf.in,-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fpermissive -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g -T "fsp.ld" -Xlinker --gc-sections -L "C:\\Users\\devteam\\e2_studio\\workspace\\Hello_World_TFLM_VOICE_RA6E1/script" -Wl,-Map,"Hello_World_TFLM_VOICE_RA6E1.map" --specs=nano.specs --specs=rdimon.specs -o "Hello_World_TFLM_VOICE_RA6E1.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group --data-sections)
+	@echo Building target: $@ && arm-none-eabi-g++ @"Hello_World_TFLM_VOICE_RA6E1.elf.in"
 
-Hello_World_TFLM_EKRA6M4_3.srec: Hello_World_TFLM_EKRA6M4_3.elf
-	arm-none-eabi-objcopy -O srec "Hello_World_TFLM_EKRA6M4_3.elf"  "Hello_World_TFLM_EKRA6M4_3.srec"
+Hello_World_TFLM_VOICE_RA6E1.srec: Hello_World_TFLM_VOICE_RA6E1.elf
+	arm-none-eabi-objcopy -O srec "Hello_World_TFLM_VOICE_RA6E1.elf"  "Hello_World_TFLM_VOICE_RA6E1.srec"
 
-Hello_World_TFLM_EKRA6M4_3.siz: Hello_World_TFLM_EKRA6M4_3.elf
-	arm-none-eabi-size --format=berkeley "Hello_World_TFLM_EKRA6M4_3.elf"
+Hello_World_TFLM_VOICE_RA6E1.siz: Hello_World_TFLM_VOICE_RA6E1.elf
+	arm-none-eabi-size --format=berkeley "Hello_World_TFLM_VOICE_RA6E1.elf"
 
 # Other Targets
 clean:
 	-$(file > clean_file.tmp,  $(CC_UPPER_DEPS)  $(C++_UPPER_DEPS)  $(CPP_UPPER_DEPS)  $(FSY_DEPS)  $(C_UPPER_DEPS)  $(SECONDARY_SIZE)  $(SRC_UPPER_DEPS)  $(S_DEPS)  $(PP_UPPER_DEPS)  $(P_DEPS)  $(JMP_UPPER_DEPS)  $(ASM_UPPER_DEPS)  $(SX_UPPER_DEPS)  $(CXX_DEPS)  $(SREC)  $(JMP_DEPS)  $(CXX_UPPER_DEPS)  $(P_UPPER_DEPS)  $(FSY_UPPER_DEPS)  $(C_DEPS)  $(SRC_DEPS)  $(PP_DEPS)  $(CC_DEPS)  $(SX_DEPS)  $(C++_DEPS)  $(OBJS)  $(SECONDARY_FLASH)  $(ASM_DEPS)  $(S_UPPER_DEPS)  $(MAP)  $(CPP_DEPS) )
 	-@ xargs -P 2 -s 32000 -t -a clean_file.tmp $(RM)
 	-@$(RM) clean_file.tmp
-	-$(RM)  Hello_World_TFLM_EKRA6M4_3.elf
+	-$(RM)  Hello_World_TFLM_VOICE_RA6E1.elf
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_SIZE)
