@@ -6,7 +6,7 @@ The following repository will provide anyone the ability of executing TinyML app
 
 For every example, there will be an instruction set on how to execute the example with the given device. 
 
-**Note** Currently, the hello world example have been ported to the EK-RA6M4 board but can also easily be ported on other RA family boards as well.
+**Note** Currently, the hello world example have been ported to the EK-RA6M4 and VUI-RA6E1 board but can also easily be ported on other RA family boards as well.
 
 ## Ported examples
 The examples provided in this repository is shown in table below.
@@ -14,4 +14,5 @@ The examples provided in this repository is shown in table below.
 | Board  | Examples available |
 | ------------- | ------------- |
 | [EK-RA6M4](https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ek-ra6m4-evaluation-kit-ra6m4-mcu-group)   | Hello world|
+| [VUI-RA6E1](https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/tw001-vuia6e1pocz-ra6e1-voice-user-reference-kit)   | Hello world|
 
