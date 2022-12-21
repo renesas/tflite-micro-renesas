@@ -26,6 +26,8 @@ To run the project, you will need EKRA6M4 board and USB to TTL UART Converter Ca
  - Then press switch perspective, followed by, resume button (F8), three times, and your code will be executing. 
  - Open Cool Term and choose the correct COM to which USB to TTL UART is connected to. 
  - Once you press connect, it should start showing x and y results. Hence, your model and program has been successfully flashed. 
-  
+
+**Note: HelloworldTFLM.mp4 in this repo provides a step by step video tutorial to running the program** 
+
 ![Screenshot](Endresult.PNG)
 ![Screenshot](Ra6m4.jpg)
