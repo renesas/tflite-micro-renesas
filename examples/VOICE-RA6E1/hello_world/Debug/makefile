@@ -130,7 +130,7 @@ all: Hello_World_TFLM_VOICE_RA6E1.elf secondary-outputs
 
 # Tool invocations
 Hello_World_TFLM_VOICE_RA6E1.elf: $(OBJS) $(USER_OBJS) $(LINKER_SCRIPT)
-	$(file > Hello_World_TFLM_VOICE_RA6E1.elf.in,-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fpermissive -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g -T "fsp.ld" -Xlinker --gc-sections -L "C:\\Users\\devteam\\e2_studio\\workspace\\Hello_World_TFLM_VOICE_RA6E1/script" -Wl,-Map,"Hello_World_TFLM_VOICE_RA6E1.map" --specs=nano.specs --specs=rdimon.specs -o "Hello_World_TFLM_VOICE_RA6E1.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group --data-sections)
+	$(file > Hello_World_TFLM_VOICE_RA6E1.elf.in,-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fpermissive -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g -T "fsp.ld" -Xlinker --gc-sections -L "C:\\Users\\devteam\\Documents\\GitHub\\tflite-micro-renesas\\examples\\VOICE-RA6E1\\hello_world/script" -Wl,-Map,"Hello_World_TFLM_VOICE_RA6E1.map" --specs=nano.specs --specs=rdimon.specs -o "Hello_World_TFLM_VOICE_RA6E1.elf" -Wl,--start-group $(OBJS) $(USER_OBJS) $(LIBS) -Wl,--end-group --data-sections)
 	@echo Building target: $@ && arm-none-eabi-g++ @"Hello_World_TFLM_VOICE_RA6E1.elf.in"
 
 Hello_World_TFLM_VOICE_RA6E1.srec: Hello_World_TFLM_VOICE_RA6E1.elf
