@@ -6,3 +6,5 @@ This project can be set up using the instructions given for the EKRA6M4 board, p
 
 A python script called "uart_read_display.py" is provided in the main project folder, which can be used to read the results directly from the board as (x,y) tuples. You may need to adjust the value of the SER_PORT variable to correspond with the UART to USB serial input on your computer. 
 
+Running the python script should yield something that looks like this:
+![image](example_output.png)

@@ -116,11 +116,9 @@ void loop() {
 
   // Output the results. A custom HandleOutput function can be implemented
   // for each supported hardware target.
-  R_BSP_SoftwareDelay(1000,  BSP_DELAY_UNITS_MILLISECONDS);
+  R_BSP_SoftwareDelay(2000,  BSP_DELAY_UNITS_MILLISECONDS);
 
   HandleOutput(error_reporter, x, y);
-  TF_LITE_REPORT_ERROR(error_reporter, "fanpisefjapsfjpeowj %f\n",
-          static_cast<int>(inference_count));
 
   // Increment the inference_counter, and reset it if we have reached
   // the total number per cycle
